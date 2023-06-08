@@ -15,7 +15,7 @@ header{
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 30px 12px;
+    padding: 25px 18%;
 }
 .logo{
     color: black;
@@ -92,7 +92,226 @@ section{
     background: white;
     transform: scale(1.1);
 }
-.container .container-img{
-    height: 50px;
-    width: 50px;
+.sticky{
+    background: #fff;
+    padding: 25px 18%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+/* container */
+.text h2{
+    font-size: 48px;
+    line-height: 1.1;
+    text-align: center;
+}
+.row-items{
+   width: 96%;
+   height: auto;
+   
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    column-gap: 23px;
+    margin-top: 50px;
+}
+.row-items-img img{
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+
+
+/* Package Section  */
+
+.title{
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.2;
+}
+.card-box{
+    
+    width: 320px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+}
+.card-box:hover{
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+}
+.card-image img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+.package-container{
+    display: flex;
+    margin: 20px 0px;
+}
+
+.card-data h4{
+    position: absolute;
+    top: 36px;
+    left: 40px;
+    color: white;
+    font-size: 25px;
+}
+.card-data{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.card-data p{
+    margin-top: 5px;
+}
+
+/* Destination Section */
+.destination-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+.col-content{
+    position: relative;
+}
+.col-content img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(80%);
+    transition: all .3s cubic-bezier(.495, .05, .55, .95);
+    will-change: filter;
+}
+.col-content  h5{
+    position: absolute;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    left: 15px;
+    bottom: 60px;
+}
+.col-content p{
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    left: 15px;
+    bottom: 30px;
+    letter-spacing: 2px;
+}
+.col-content img:hover{
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+/* news letter */
+.newsletter{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.news-text h2{
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+.news-text p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.newsletter form{
+    
+    max-width: 100%;
+    width: 400px;
+    position: relative;
+}
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 150px 20px 30px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+.newsletter form input:last-child{
+    display: inline-block;
+    position: absolute;
+    padding: 14px 30px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: #6e54fa;
+    color: white;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+
+/* footer */
+.contact{
+    
+    background: darkgray;
+    
+}
+.footer-section{
+    width: 100%;
+    background: darkgrey;
+}
+.footer{
+    
+    margin: 2px;
+    padding: 20px 0;
+}
+.main{
+    
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list{
+    
+    margin: 2px;
+    width: 24%;
+}
+.list h4{
+    font-size: 21px;
+    color: black;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+.list h4::before{
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    bottom: -10px;
+    background: #fff;
+
+}
+.list ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.list ul li a{
+    color: #111010bf;
+    font-size: 20px;
+    display: block;
+    transition: .3s;
+}
+.list ul li a:hover{
+    color: #4f1bb7;
+    transform: translateX(10px);
+}
+.end-text{
+    text-align: center;
+    padding-top: 24px;
 }
